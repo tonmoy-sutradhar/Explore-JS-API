@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore JSON API</title>
+    <style>
+      .bd {
+        text-align: center;
+        font-size: 3rem;
+      }
+
+      #div-container {
+        margin-left: 100px;
+      }
+    </style>
   </head>
   <body>
-    <h1>JSON API</h1>
-    <button onclick="loadData()">Load Data</button>
+    <div class="bd">
+      <h1>JSON API</h1>
+      <button onclick="loadData()">Load Data</button>
+      <button onclick="loadData2()">Load Data 2</button>
+      <button onclick="loadUser()">Load User</button>
+      <button onclick="displayUserName()">Load UserName</button>
+    </div>
+
+    <div id="div-container">
+      <ul id="user-id"></ul>
+    </div>
+
+    <!-- js script -->
     <script src="js/fetch.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
